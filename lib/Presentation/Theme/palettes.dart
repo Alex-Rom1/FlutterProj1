@@ -10,19 +10,19 @@ abstract class Palette {
 
 class BlackPalette extends Palette {
   @override
-  Color background = Color(0xFF282828);
+  Color background = Color(0xFF262525);
 
   @override
-  Color secondaryBackground = Color(0xFF202020);
+  Color secondaryBackground = Color(0xFF141414);
 
   @override
-  Color text = Color(0xFFE5E5E5);
+  Color text = Color(0xFFFFFFFF);
 
   @override
-  Color hint = Color(0xFF808080);
+  Color hint = Color(0xFFA1A1A1);
 
   @override
-  Color button = Colors.cyan;
+  Color button = Color(0xFF00B3FF);
 }
 
 class LightPalette extends Palette {

@@ -108,14 +108,14 @@ class _LogInPageState extends State<LogInPage> {
 
               Container(
                 width: double.infinity,
-                height: 50,
+                height: 60,
                 child: TextButton(
                   onPressed: () {},
                   child: Text('Войти', style: theme.texts.title),
                   style: TextButton.styleFrom(
                     backgroundColor: theme.palette.button,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
+                      borderRadius: BorderRadius.circular(18),
                     ),
                   ),
                 ),

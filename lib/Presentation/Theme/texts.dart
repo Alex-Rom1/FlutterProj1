@@ -29,7 +29,7 @@ class Texts {
 
   TextStyle get bigTitle => TextStyle(
     color: palette.text,
-    fontSize: 40,
+    fontSize: 36,
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w700,
   );

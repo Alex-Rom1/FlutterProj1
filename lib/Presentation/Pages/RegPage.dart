@@ -197,10 +197,12 @@ class _RegPageState extends State<RegPage> {
 
               Container(
                 width: double.infinity,
-                height: 50,
+                height: 60,
                 child: TextButton(
-                  onPressed: () {},
-                  child: Text('Создать аккаунт', style: theme.texts.title),
+                  onPressed: () {
+                    Get.to(LogInPage(title: 'Вход'));
+                  },
+                  child: Text('Зарегистрироваться', style: theme.texts.title),
                   style: TextButton.styleFrom(
                     backgroundColor: theme.palette.button,
                     shape: RoundedRectangleBorder(

@@ -174,9 +174,11 @@ packages:
   package_for_flutter_proj1:
     dependency: "direct main"
     description:
-      path: "C:\\Users\\user\\AndroidStudioProjects\\package_for_flutter_proj1"
-      relative: false
-    source: path
+      path: "."
+      ref: master
+      resolved-ref: "9196b0cf1c8ed5073b15c2c7e87c0c9f65ee2023"
+      url: "https://github.com/Alex-Rom1/FlutterProj1_package.git"
+    source: git
     version: "0.0.1"
   path:
     dependency: transitive

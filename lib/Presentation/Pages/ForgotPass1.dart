@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled1/Presentation/Theme/extensions.dart';
 import 'package:untitled1/Presentation/Pages/LogInPage.dart';
 import 'package:get/get.dart';
+import 'package:untitled1/Presentation/Pages/ForgotPass2.dart';
 
 class ForgotPassSendPage extends StatefulWidget {
   const ForgotPassSendPage({super.key, required this.title});
@@ -55,9 +56,11 @@ class _ForgotPassSendPageState extends State<ForgotPassSendPage> {
               ),
               Container(
                 width: double.infinity,
-                height: 50,
+                height: 60,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(ForgotPassCodePage(title: 'Ввод кода из письма'));
+                  },
                   child: Text('Отправить код', style: theme.texts.title),
                   style: TextButton.styleFrom(
                     backgroundColor: theme.palette.button,

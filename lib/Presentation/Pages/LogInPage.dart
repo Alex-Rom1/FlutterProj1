@@ -3,6 +3,7 @@ import 'package:untitled1/Presentation/Theme/extensions.dart';
 import 'package:untitled1/Presentation/Pages/RegPage.dart';
 import 'package:get/get.dart';
 import 'package:untitled1/Presentation/Pages/ForgotPass1.dart';
+import 'package:package_for_flutter_proj1/package_for_flutter_proj1.dart';
 
 class LogInPage extends StatefulWidget {
   const LogInPage({super.key, required this.title});
@@ -31,60 +32,11 @@ class _LogInPageState extends State<LogInPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    TextField(
-                      decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        filled: true,
-                        fillColor: theme.palette.secondaryBackground,
-                        labelText: 'Почта',
-                        labelStyle: theme.texts.hint,
-                      ),
-                      style: theme.texts.text,
-                    ),
+                    CustomInputWidgetStandart(labelText: 'Почта'),
 
                     SizedBox(height: 20),
 
-                    TextField(
-                      decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        filled: true,
-                        fillColor: theme.palette.secondaryBackground,
-                        labelText: 'Пароль',
-                        labelStyle: theme.texts.hint,
-                        suffixIcon: IconButton(
-                          onPressed: () {
-                            setState(() {
-                              cantSeePass = !cantSeePass;
-                            });
-                          },
-                          icon: cantSeePass ? Icon(Icons.visibility_off) : Icon(Icons.visibility),
-                        ),
-                      ),
-                      obscureText: cantSeePass,
-                      style: theme.texts.text,
-                    ),
+                    CustomInputWidgetPassword(labelText: 'Пароль'),
 
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,

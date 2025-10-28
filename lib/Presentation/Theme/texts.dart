@@ -20,9 +20,9 @@ class Texts {
     fontWeight: FontWeight.w500,
   );
 
-  TextStyle get medium => TextStyle(
+  TextStyle get mediumTitle => TextStyle(
     color: palette.text,
-    fontSize: 14,
+    fontSize: 32,
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w500,
   );

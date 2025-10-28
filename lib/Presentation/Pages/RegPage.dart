@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled1/Presentation/Theme/extensions.dart';
 import 'package:untitled1/Presentation/Pages/LogInPage.dart';
 import 'package:get/get.dart';
+import 'package:package_for_flutter_proj1/package_for_flutter_proj1.dart';
 
 class RegPage extends StatefulWidget {
   const RegPage({super.key, required this.title});
@@ -32,165 +33,27 @@ class _RegPageState extends State<RegPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
 
-                    TextField(
-                      decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        filled: true,
-                        fillColor: theme.palette.secondaryBackground,
-                        labelText: 'Фамилия',
-                        labelStyle: theme.texts.hint,
-                      ),
-                      style: theme.texts.text,
-                    ),
+                    CustomInputWidgetStandart(labelText: 'Фамилия'),
 
                     SizedBox(height: 20),
 
-                    TextField(
-                      decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        filled: true,
-                        fillColor: theme.palette.secondaryBackground,
-                        labelText: 'Имя',
-                        labelStyle: theme.texts.hint,
-                      ),
-                      style: theme.texts.text,
-                    ),
+                    CustomInputWidgetStandart(labelText: 'Имя'),
 
                     SizedBox(height: 20),
 
-                    TextField(
-                      decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        filled: true,
-                        fillColor: theme.palette.secondaryBackground,
-                        labelText: 'Отчество',
-                        labelStyle: theme.texts.hint,
-                      ),
-                      style: theme.texts.text,
-                    ),
+                    CustomInputWidgetStandart(labelText: 'Отчество'),
 
                     SizedBox(height: 20),
 
-                    TextField(
-                      decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        filled: true,
-                        fillColor: theme.palette.secondaryBackground,
-                        labelText: 'Почта',
-                        labelStyle: theme.texts.hint,
-                      ),
-                      style: theme.texts.text,
-                    ),
+                    CustomInputWidgetStandart(labelText: 'Почта'),
 
                     SizedBox(height: 20),
 
-                    TextField(
-                      decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        filled: true,
-                        fillColor: theme.palette.secondaryBackground,
-                        labelText: 'Пароль',
-                        labelStyle: theme.texts.hint,
-                        suffixIcon: IconButton(
-                          onPressed: () {
-                            setState(() {
-                              cantSeePass = !cantSeePass;
-                            });
-                          },
-                          icon: cantSeePass ? Icon(Icons.visibility_off) : Icon(Icons.visibility),
-                        ),
-                      ),
-                      obscureText: cantSeePass,
-                      style: theme.texts.text,
-                    ),
+                    CustomInputWidgetPassword(labelText: 'Пароль'),
 
                     SizedBox(height: 20),
 
-                    TextField(
-                      decoration: InputDecoration(
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          borderSide: BorderSide(
-                            color: theme.palette.secondaryBackground,
-                          ),
-                        ),
-                        filled: true,
-                        fillColor: theme.palette.secondaryBackground,
-                        labelText: 'Повторите пароль',
-                        labelStyle: theme.texts.hint,
-                        suffixIcon: IconButton(
-                          onPressed: () {
-                            setState(() {
-                              cantSeePass2 = !cantSeePass2;
-                            });
-                          },
-                          icon: cantSeePass2 ? Icon(Icons.visibility_off) : Icon(Icons.visibility),
-                        ),
-                      ),
-                      obscureText: cantSeePass2,
-                      style: theme.texts.text,
-                    ),
+                    CustomInputWidgetPassword(labelText: 'Повторите пароль'),
                   ],
                 ),
               ),

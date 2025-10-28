@@ -99,7 +99,7 @@ class _ForgotPassChangePageState extends State<ForgotPassChangePage> {
               ),
               Container(
                 width: double.infinity,
-                height: 50,
+                height: 60,
                 child: TextButton(
                   onPressed: () {},
                   child: Text('Установить новый пароль', style: theme.texts.title),

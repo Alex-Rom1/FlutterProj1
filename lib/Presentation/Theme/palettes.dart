@@ -6,6 +6,7 @@ abstract class Palette {
   abstract Color text;
   abstract Color hint;
   abstract Color button;
+  abstract Color tretiaryBackground;
 }
 
 class BlackPalette extends Palette {
@@ -14,6 +15,9 @@ class BlackPalette extends Palette {
 
   @override
   Color secondaryBackground = Color(0xFF141414);
+
+  @override
+  Color tretiaryBackground = Color(0xFF262525);
 
   @override
   Color text = Color(0xFFFFFFFF);
@@ -31,6 +35,9 @@ class LightPalette extends Palette {
 
   @override
   Color secondaryBackground = Color(0xFFB3B3B3);
+
+  @override
+  Color tretiaryBackground = Color(0xFFC4C3C3);
 
   @override
   Color text = Color(0xFF323232);

@@ -54,4 +54,18 @@ class Texts {
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w500,
   );
+
+  TextStyle get hintSmall => TextStyle(
+    color: palette.hint,
+    fontSize: 14,
+    fontFamily: 'Roboto',
+    fontWeight: FontWeight.w400,
+  );
+
+  TextStyle get link => TextStyle(
+    color: palette.button,
+    fontSize: 14,
+    fontFamily: 'Roboto',
+    fontWeight: FontWeight.w500,
+  );
 }
